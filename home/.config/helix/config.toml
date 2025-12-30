@@ -1,0 +1,7 @@
+theme = 'catppuccin_mocha'
+
+[editor]
+gutters = ["line-numbers", "spacer", "diff"]
+
+[editor.cursor-shape]
+insert = 'bar'
