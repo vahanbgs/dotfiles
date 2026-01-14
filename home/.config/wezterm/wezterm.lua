@@ -4,6 +4,7 @@ return {
   automatically_reload_config = true,
   color_scheme = 'Catppuccin Mocha',
   default_cursor_style = 'SteadyBar',
+  default_prog = { "fish", "-l" },
   enable_tab_bar = false,
   font = wezterm.font {
     family = 'FiraCode Nerd Font',
