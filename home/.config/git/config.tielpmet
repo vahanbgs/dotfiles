@@ -1,8 +1,21 @@
 [alias]
 	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(yellow)%ad%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=human --decorate=full --all
 
+[core]
+	pager = delta
+
+[delta]
+	navigate = true
+	side-by-side = true
+
 [init]
 	defaultBranch = main
+
+[interactive]
+	diffFilter = delta --color-only
+
+[merge]
+	conflictStyle = zdiff3
 
 [pull]
 	autoStash = true
