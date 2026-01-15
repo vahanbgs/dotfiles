@@ -5,6 +5,7 @@ if status is-interactive
 
     abbr -a ls lsd -1
     abbr -a ll lsd -l
+    abbr -a tree lsd --tree
 
     direnv hook fish | source
     starship init fish | source
