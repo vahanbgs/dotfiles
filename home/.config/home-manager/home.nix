@@ -20,6 +20,7 @@
     fish
     git
     helix
+    lsd
     nerd-fonts.fira-code
     nil
     nixfmt
