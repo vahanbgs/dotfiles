@@ -1,0 +1,6 @@
+[submodule "home/.config/catppuccin/--force"]
+	path = home/.config/catppuccin/--force
+	url = https://github.com/catppuccin/alacritty.git
+[submodule "home/.config/catppuccin/alacritty"]
+	path = home/.config/catppuccin/alacritty
+	url = https://github.com/catppuccin/alacritty.git

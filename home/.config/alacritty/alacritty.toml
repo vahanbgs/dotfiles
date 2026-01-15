@@ -1,0 +1,16 @@
+general.import = ["~/.config/catppuccin/alacritty/catppuccin-mocha.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "FiraCode Nerd Font" }
+size = 16
+
+[terminal]
+shell = { program = "fish", args = ["-l"] }
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
