@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
     bat
     curl
+    delta
     direnv
     dot
     fd
