@@ -29,7 +29,6 @@
     starship
     taplo
     tldr
-    tree
     wezterm
     wget
     zoxide
