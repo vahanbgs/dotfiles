@@ -1,8 +1,19 @@
+[alias]
+	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(yellow)%ad%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=human --decorate=full --all
+
 [init]
 	defaultBranch = main
 
 [pull]
+	autoStash = true
+	ff = only
 	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[status]
+	short = true
 
 [user]
 	email = (<|[git_user_email]|>)
