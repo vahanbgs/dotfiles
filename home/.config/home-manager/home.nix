@@ -32,6 +32,7 @@
       ripgrep
       sd
       starship
+      strace
       taplo
       tldr
       wezterm
