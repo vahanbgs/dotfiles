@@ -1,5 +1,6 @@
 {
   pkgs,
+  pkgs-unstable,
   dot,
   username,
   ...
@@ -10,30 +11,36 @@
 
   home.stateVersion = "25.11";
 
-  home.packages = with pkgs; [
-    bat
-    bottom
-    curl
-    delta
-    direnv
-    dot
-    fd
-    fish
-    git
-    helix
-    lsd
-    nerd-fonts.fira-code
-    nil
-    nixfmt
-    ripgrep
-    sd
-    starship
-    taplo
-    tldr
-    wezterm
-    wget
-    zoxide
-  ];
+  home.packages =
+    with pkgs;
+    [
+      anyrun
+      bat
+      bottom
+      curl
+      delta
+      direnv
+      dot
+      fd
+      fish
+      git
+      helix
+      lsd
+      nerd-fonts.fira-code
+      nil
+      nixfmt
+      ripgrep
+      sd
+      starship
+      taplo
+      tldr
+      wezterm
+      wget
+      zoxide
+    ]
+    ++ (with pkgs-unstable; [
+      noctalia-shell
+    ]);
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
