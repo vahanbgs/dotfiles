@@ -1,0 +1,14 @@
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "sql"
+language-servers = ["sqruff"]
+formatter = { command = "sqruff", args = ["fix", "-"] }
+auto-format = true
+
+[language-server.sqruff]
+command = "sqruff"
+args = ["lsp"]

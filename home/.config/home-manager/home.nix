@@ -31,6 +31,7 @@
       nixfmt
       ripgrep
       sd
+      sqruff
       starship
       strace
       taplo
