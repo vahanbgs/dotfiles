@@ -17,6 +17,7 @@
       anyrun
       bat
       bottom
+      caligula
       curl
       delta
       direnv
