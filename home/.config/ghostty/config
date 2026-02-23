@@ -1,0 +1,12 @@
+command = fish -l
+confirm-close-surface = false
+cursor-style = bar
+cursor-style-blink = false
+font-family = FiraCode Nerd Font
+font-feature = cv06, ss01, ss03, ss05, zero
+font-size = 14
+resize-overlay = never
+shell-integration-features = no-cursor, ssh-env
+theme = Catppuccin Mocha
+window-padding-x = 10
+window-padding-y = 10

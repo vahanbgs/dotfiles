@@ -24,6 +24,7 @@
       dot
       fd
       fish
+      ghostty
       git
       helix
       lsd
