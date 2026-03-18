@@ -26,6 +26,7 @@
       fish
       ghostty
       git
+      go
       helix
       lsd
       nerd-fonts.fira-code
