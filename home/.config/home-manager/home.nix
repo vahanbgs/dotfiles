@@ -16,6 +16,7 @@
     [
       anyrun
       bat
+      biome
       bottom
       caligula
       curl
