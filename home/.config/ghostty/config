@@ -7,6 +7,6 @@ font-feature = cv06, ss01, ss03, ss05, zero
 font-size = 14
 resize-overlay = never
 shell-integration-features = no-cursor, ssh-env
-theme = Catppuccin Mocha
+theme = Rose Pine Moon
 window-padding-x = 10
 window-padding-y = 10
