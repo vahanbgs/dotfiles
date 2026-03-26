@@ -1,6 +1,49 @@
+[language-server.biome]
+command = "biome"
+args = ["lsp"]
+
+[language-server.sqruff]
+command = "sqruff"
+args = ["lsp"]
+
 [[language]]
-name = "toml"
-formatter = { command = "taplo", args = ["fmt", "-"] }
+name = "css"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.css",
+] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.js",
+] }
+auto-format = true
+
+[[language]]
+name = "json"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.json",
+] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.jsx",
+] }
 auto-format = true
 
 [[language]]
@@ -8,6 +51,27 @@ name = "sql"
 language-servers = ["sqruff"]
 formatter = { command = "sqruff", args = ["fix", "-"] }
 
-[language-server.sqruff]
-command = "sqruff"
-args = ["lsp"]
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.tsx",
+] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = ["biome"]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "file.ts",
+] }
+auto-format = true
