@@ -29,6 +29,7 @@
       git
       go
       helix
+      jujutsu
       lsd
       nerd-fonts.fira-code
       nil
