@@ -14,6 +14,7 @@
   home.packages =
     with pkgs;
     [
+      age
       anyrun
       bat
       biome
@@ -36,6 +37,7 @@
       nixfmt
       ripgrep
       sd
+      sops
       sqruff
       starship
       strace
