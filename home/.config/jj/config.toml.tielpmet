@@ -1,5 +1,8 @@
 #:schema https://jj-vcs.github.io/jj/latest/config-schema.json
 
+[ui]
+editor = "hx"
+
 [user]
 email = "(<|[git_user_email]|>)"
 name = "(<|[git_user_name]|>)"
