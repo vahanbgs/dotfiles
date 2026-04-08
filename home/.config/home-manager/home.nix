@@ -30,7 +30,6 @@
       git
       go
       helix
-      jujutsu
       lsd
       nerd-fonts.fira-code
       nil
@@ -48,6 +47,7 @@
       zoxide
     ]
     ++ (with pkgs-unstable; [
+      jujutsu
       noctalia-shell
     ]);
 
