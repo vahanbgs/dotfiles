@@ -1,0 +1,5 @@
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[user]
+email = "(<|[git_user_email]|>)"
+name = "(<|[git_user_name]|>)"
