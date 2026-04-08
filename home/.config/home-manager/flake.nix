@@ -18,7 +18,7 @@
       system = "x86_64-linux";
       pkgs = inputs.nixpkgs.legacyPackages.${system};
       pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${system};
-      dot = inputs.dot.defaultPackage.${system};
+      dot = inputs.dot.packages.${system}.default;
       username = builtins.replaceStrings [ " " "\t" "\n" ] [ "" "" "" ] (
         builtins.readFile ./username.txt
       );
