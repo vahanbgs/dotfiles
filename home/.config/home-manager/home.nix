@@ -24,6 +24,7 @@
       delta
       direnv
       dot
+      eza
       fd
       fish
       ghostty
