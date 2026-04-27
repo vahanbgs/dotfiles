@@ -6,7 +6,7 @@ if status is-interactive
 
     abbr -a ls lsd -1
     abbr -a ll lsd -l
-    abbr -a tree lsd --tree
+    abbr -a tree eza --tree --git-ignore
 
     function jj_sub
         for subcommand in clone fetch init push
