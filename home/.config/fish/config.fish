@@ -9,7 +9,7 @@ if status is-interactive
     abbr -a tree eza --tree --git-ignore
 
     function jj_sub
-        for subcommand in clone fetch init push
+        for subcommand in clone fetch init push remote
             if string match --quiet 'jj '$subcommand' ' -- (commandline -j)
                 echo git $subcommand
                 return 0
