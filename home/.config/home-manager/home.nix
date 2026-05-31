@@ -42,7 +42,9 @@
       starship
       strace
       taplo
+      tinymist
       tldr
+      typstyle
       wezterm
       wget
       zoxide

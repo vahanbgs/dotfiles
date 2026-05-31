@@ -6,6 +6,9 @@ args = ["lsp"]
 command = "sqruff"
 args = ["lsp"]
 
+[language-server.tinymist]
+command = "tinymist"
+
 [[language]]
 name = "css"
 language-servers = ["biome"]
@@ -74,4 +77,10 @@ formatter = { command = "biome", args = [
   "--stdin-file-path",
   "file.ts",
 ] }
+auto-format = true
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
+formatter = { command = "typstyle" }
 auto-format = true
