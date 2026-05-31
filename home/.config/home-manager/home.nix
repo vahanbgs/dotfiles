@@ -27,6 +27,7 @@
       eza
       fd
       fish
+      font-awesome
       ghostty
       git
       go
