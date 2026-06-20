@@ -48,6 +48,7 @@
       typstyle
       wezterm
       wget
+      yt-dlp
       zoxide
     ]
     ++ (with pkgs-unstable; [
