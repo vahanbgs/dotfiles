@@ -20,6 +20,8 @@
       biome
       bottom
       caligula
+      cargo
+      clippy
       curl
       delta
       direnv
@@ -37,6 +39,9 @@
       nil
       nixfmt
       ripgrep
+      rustc
+      rustfmt
+      rust-analyzer
       sd
       sops
       sqruff
