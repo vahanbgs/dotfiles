@@ -9,6 +9,9 @@ args = ["lsp"]
 [language-server.tinymist]
 command = "tinymist"
 
+[language-server.wgsl-analyzer]
+command = "wgsl-analyzer"
+
 [[language]]
 name = "css"
 language-servers = ["biome"]
@@ -83,4 +86,10 @@ auto-format = true
 name = "typst"
 language-servers = ["tinymist"]
 formatter = { command = "typstyle" }
+auto-format = true
+
+[[language]]
+name = "wgsl"
+language-servers = ["wgsl-analyzer"]
+formatter = { command = "wgslfmt", args = ["-"] }
 auto-format = true
