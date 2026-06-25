@@ -37,6 +37,7 @@
       lsd
       nerd-fonts.fira-code
       nil
+      nixd
       nixfmt
       ripgrep
       rustc
