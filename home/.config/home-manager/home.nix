@@ -46,6 +46,7 @@
       tinymist
       tldr
       typstyle
+      vlc
       wezterm
       wget
       yt-dlp
