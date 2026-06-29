@@ -1,5 +1,6 @@
 [alias]
 	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(yellow)%ad%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=human --decorate=full --all
+	st = status
 
 [core]
 	pager = delta
