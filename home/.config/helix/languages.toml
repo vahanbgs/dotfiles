@@ -13,6 +13,21 @@ command = "tinymist"
 command = "wgsl-analyzer"
 
 [[language]]
+name = "c"
+formatter = { command = "clang-format" }
+auto-format = true
+
+[[language]]
+name = "cmake"
+formatter = { command = "gersemi", args = ["-"] }
+auto-format = true
+
+[[language]]
+name = "cpp"
+formatter = { command = "clang-format" }
+auto-format = true
+
+[[language]]
 name = "css"
 language-servers = ["biome"]
 formatter = { command = "biome", args = [
