@@ -4,6 +4,7 @@ if status is-interactive
     set fish_greeting
     fish_config theme choose "Rosé Pine Moon"
 
+    abbr -a la lsd -a
     abbr -a ls lsd -1
     abbr -a ll lsd -l
     abbr -a tree eza --tree --git-ignore
