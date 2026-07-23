@@ -1,6 +1,7 @@
 {
   pkgs,
   pkgs-unstable,
+  cart,
   dot,
   username,
   ...
@@ -21,6 +22,7 @@
       bottom
       caligula
       cargo
+      cart
       clippy
       curl
       delta

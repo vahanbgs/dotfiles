@@ -10,6 +10,9 @@
 
     dot.url = "github:vahanbgs/dot/main";
     dot.inputs.nixpkgs.follows = "nixpkgs";
+
+    cart.url = "github:vahanbgs/cart";
+    cart.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -18,6 +21,7 @@
       system = "x86_64-linux";
       pkgs = inputs.nixpkgs.legacyPackages.${system};
       pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${system};
+      cart = inputs.cart.packages.${system}.default;
       dot = inputs.dot.packages.${system}.default;
       username = builtins.replaceStrings [ " " "\t" "\n" ] [ "" "" "" ] (
         builtins.readFile ./username.txt
@@ -32,6 +36,7 @@
         ];
 
         extraSpecialArgs = {
+          inherit cart;
           inherit dot;
           inherit username;
           inherit pkgs-unstable;
