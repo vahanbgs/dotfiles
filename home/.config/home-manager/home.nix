@@ -23,6 +23,7 @@
       caligula
       cargo
       cart
+      claude-code
       clippy
       curl
       delta
