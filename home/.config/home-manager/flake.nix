@@ -23,7 +23,10 @@
         inherit system;
         config.allowUnfree = true;
       };
-      pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${system};
+      pkgs-unstable = import inputs.nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
       cart = inputs.cart.packages.${system}.default;
       dot = inputs.dot.packages.${system}.default;
       username = builtins.replaceStrings [ " " "\t" "\n" ] [ "" "" "" ] (

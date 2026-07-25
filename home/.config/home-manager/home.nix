@@ -23,7 +23,6 @@
       caligula
       cargo
       cart
-      claude-code
       clippy
       curl
       delta
@@ -62,6 +61,7 @@
       zoxide
     ]
     ++ (with pkgs-unstable; [
+      claude-code
       jujutsu
       noctalia-shell
     ]);
