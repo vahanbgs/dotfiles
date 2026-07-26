@@ -32,6 +32,9 @@
       username = builtins.replaceStrings [ " " "\t" "\n" ] [ "" "" "" ] (
         builtins.readFile ./username.txt
       );
+      # username = builtins.replaceStrings [ " " "\t" "\n" ] [ "" "" "" ] (
+      #   builtins.readFile ./username.txt
+      # );
     in
     {
       homeConfigurations.${username} = inputs.home-manager.lib.homeManagerConfiguration {

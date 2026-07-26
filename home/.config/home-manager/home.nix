@@ -61,7 +61,6 @@
       zoxide
     ]
     ++ (with pkgs-unstable; [
-      claude-code
       jujutsu
       noctalia-shell
     ]);

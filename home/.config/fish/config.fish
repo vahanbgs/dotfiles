@@ -33,4 +33,6 @@ if status is-interactive
 
     direnv hook fish | source
     starship init fish | source
+
+    export PATH="$HOME/.local/bin:$PATH"
 end
