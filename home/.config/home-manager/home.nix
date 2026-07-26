@@ -31,6 +31,8 @@
       eza
       fd
       fish
+      flutter
+      flutter_rust_bridge_codegen
       font-awesome
       ghostty
       git
